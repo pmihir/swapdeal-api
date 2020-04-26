@@ -16,6 +16,12 @@ const userSchema = Schema({
     password:String,
 }, {collection : "Users", timestamp:true})
 
+const resettokenSchema = Schema({
+    _userId : { type: Mongoose.Schema.Types.ObjectId, ref: 'User' },
+    resettoken : String,
+    createdAt: { type: Date,  default: Date.now, expires: 43200 }
+},{collection : "ResetPassword", timestamp:true})
+
 
 
 
@@ -24,6 +30,16 @@ let userCollection = {};
 userCollection.getUserCollection = () =>{
     return Mongoose.connect(url, {useNewUrlParser:true}).then((database)=>{
         return database.model('Users', userSchema)
+    }).catch((error)=>{
+        let err = new Error("Could not connect to Database");
+        err.status = 500;
+        throw err;
+    })
+}
+
+userCollection.getResetTokenCollection = () =>{
+    return Mongoose.connect(url, {useNewUrlParser:true}).then((database)=>{
+        return database.model('ResetPassword', resettokenSchema)
     }).catch((error)=>{
         let err = new Error("Could not connect to Database");
         err.status = 500;

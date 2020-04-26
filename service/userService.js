@@ -1,6 +1,6 @@
 const userDb = require('../model/users');
+const configureUserErrorMessageList = require("../utilities/errorMessages");
 const jwt = require('jsonwebtoken');
-
 const userService = {};
 
 userService.register = (userData)=>{
@@ -16,15 +16,19 @@ userService.register = (userData)=>{
 }
 
 
+// final enhancement of code yet to be done
+
+
+
 userService.login = (userData) =>{
     return userDb.login(userData).then(data=>{
-        if(data == null){
-            let err = new Error("Email is not Existed...Please Register First!!!");
+        if(data == 4){
+            let err = new Error(configureUserErrorMessageList[data]);
             err.status = 500;
             throw err;
         }
-        if(data == false){
-            let err = new Error("Incorrect Password");
+        if(data == 5){
+            let err = new Error(configureUserErrorMessageList[data]);
             err.status = 500;
             throw err;
         }
@@ -34,10 +38,72 @@ userService.login = (userData) =>{
             },"Yoursecret");
             var user = {
                 success:true,
-                token : 'JWT' + token,
+                token : 'jwt ' + token,
                 user : data
             }
             return user;
+        }
+    })
+}
+
+userService.socialLogin = (userData) => {
+    return userDb.socialLogin(userData).then(data=>{
+        var token = jwt.sign({
+            data : data.username
+        },"Yoursecret");
+        var user = {
+            success:true,
+            token : 'jwt' + token,
+            user : data
+        }
+        return user;
+    })
+}
+
+userService.resetPassword = (userData) => {
+    return userDb.resetPassword(userData).then(data=>{
+        if(data){
+            var successData = {
+                message : "Reset Password link sent to your mail"
+            }
+            return successData;
+        }
+        else{
+            let err = new Error(configureUserErrorMessageList[data]);
+            err.status = 500;
+            throw err;
+        }
+    })
+}
+
+userService.validateToken = (userData) => {
+    return userDb.ValidPasswordToken(userData).then(data=>{
+        if(data){
+            var returnData = {
+                message : "Token Verified"
+            }  
+            return returnData;
+        }
+        else{
+            let err = new Error(configureUserErrorMessageList[data]);
+            err.status = 500;
+            throw err;
+        }
+    })
+}
+
+userService.newPassword = (password) => {
+    return userDb.newPassword(password).then(data=>{
+        if(data){
+            var returnData = {
+                message : "Password Reset Successfully"
+            }  
+            return returnData;
+        }
+        else{
+            let err = new Error(configureUserErrorMessageList[data]);
+            err.status = 500;
+            throw err;
         }
     })
 }
