@@ -69,7 +69,7 @@ userService.resetPassword = (userData) => {
             return successData;
         }
         else{
-            let err = new Error(configureUserErrorMessageList[data]);
+            let err = new Error("Verification Denied");
             err.status = 500;
             throw err;
         }
@@ -85,7 +85,7 @@ userService.validateToken = (userData) => {
             return returnData;
         }
         else{
-            let err = new Error(configureUserErrorMessageList[data]);
+            let err = new Error(configureUserErrorMessageList[8]);
             err.status = 500;
             throw err;
         }

@@ -67,8 +67,8 @@ userDb.resetPassword = (userData) => {
                                 service: 'Gmail',
                                 port: 465,
                                 auth: {
-                                    user: 'abc@gmail.com',
-                                    pass: 'abc@123'
+                                    user: 'pmihir0612@gmail.com',
+                                    pass: 'Mihi@681997'
                                 }
                             });
                             var mailOptions = {
@@ -80,8 +80,10 @@ userDb.resetPassword = (userData) => {
                                     'http://localhost:4200/response-reset-password/' + resetToken.resettoken + '\n\n' +
                                     'If you did not request this, please ignore this email and your password will remain unchanged.\n'
                             }
-                            return transporter.sendMail(mailOptions).then(data => {
+                            return transporter.sendMail(mailOptions).then((err,info) => {
                                 return true;
+                            }).catch(err=>{
+                                return false;
                             })
                         })
                     }
@@ -96,7 +98,7 @@ userDb.ValidPasswordToken = (userData) => {
     if (!userData.resetToken) return 7;
     return userCollection.getResetTokenCollection().then(model => {
         return model.findOne({ resettoken: userData.resetToken }).then(data => {
-            return data ? true : 8;
+            return data ? true : null;
         })
     })
 }
