@@ -17,11 +17,12 @@ userDb.generatePassword = (password) => {
 userDb.register = (userData) => {
     return userCollection.getUserCollection().then(model => {
         return model.findOne({ "email": userData.email }).then(data => {
-            if (data != null) return 1;
+            if (data != null) return null;
             return userDb.generatePassword(userData.password).then(password => {
                 userData.password = password;
                 return model.insertMany(userData).then(data => {
-                    return data ? true : 3;
+                    console.log(data);
+                    return data ? true : null;
                 })
             });
         })
@@ -54,21 +55,23 @@ userDb.socialLogin = (userData) => {
 
 // Rest Password error part is not finished yet
 userDb.resetPassword = (userData) => {
+    console.log(userData);
     return userCollection.getUserCollection().then(model => {
         return model.findOne({ "email": userData.email }).then(data => {
-            if (!data) return 4;
+            if (!data) return null;
             var resetToken = { _userId: data._id, resettoken: crypto.randomBytes(16).toString('hex') };
             return userCollection.getResetTokenCollection().then(model1 => {
                 return model1.insertMany(resetToken).then(tokenData => {
-                    if (!tokenData) return 6;
+                    if (!tokenData) return null;
                     else {
                         return model1.findOne({ _userId: data._id, resettoken: { $ne: resetToken.resettoken }}).remove().then(data => {
+                            console.log("after remove");
                             var transporter = nodemailer.createTransport({
                                 service: 'Gmail',
                                 port: 465,
                                 auth: {
                                     user: 'pmihir0612@gmail.com',
-                                    pass: 'Mihi@681997'
+                                    pass: 'Mihir@681997'
                                 }
                             });
                             var mailOptions = {
@@ -83,7 +86,7 @@ userDb.resetPassword = (userData) => {
                             return transporter.sendMail(mailOptions).then((err,info) => {
                                 return true;
                             }).catch(err=>{
-                                return false;
+                                return null;
                             })
                         })
                     }
