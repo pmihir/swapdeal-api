@@ -3,6 +3,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const userRouter = require('./routes/userRouting');
+const productRouter = require('./routes/productRouter');
 const errorLogger = require('./utilities/errorLogger');
 const passport = require('passport');
 const winston = require('winston');
@@ -49,6 +50,7 @@ app.use(expressWinston.logger({
     )
   }));
 app.use('/user',userRouter);
+app.use('/product', productRouter)
 app.use(expressWinston.errorLogger({
   transports: [
     new winston.transports.File(errorOptions.file)
