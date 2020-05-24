@@ -1,33 +1,22 @@
 var winston = require('winston');
-var expressWinston = require('express-winston');
 
-var options = {
-    file: {
-      level: 'info',
+const now = new Date();
+
+var logger = winston.createLogger({
+  transports: [
+    new winston.transports.File({
       filename: '../Logs/requestLogger.log',
-      handleExceptions: true,
-      json: true,
-      maxsize: 5242880, // 5MB
-      maxFiles: 5,
-      colorize: false,
-    }
-  };
+      level: 'info',
+      json: false,
+    }),
+    new winston.transports.Console()
+  ]
+});
 
-
-  var requestLogger = function(req,res,next){
-      new expressWinston.logger({
-        transports: [
-          new winston.transports.Console()
-        ],
-        format: winston.format.combine(
-          winston.format.timestamp({
-            format: 'YYYY-MM-DD HH:mm:ss'
-          }),
-          winston.format.json()
-        )
-      })
-      next();
+module.exports = logger;
+module.exports.stream = {
+  write: function(message, encoding) {
+    logger.info(message);
+    console.log('message=', message);
   }
-
-  module.exports = requestLogger;
-  
+};

@@ -7,7 +7,9 @@ const configureUserErrorMessageList = {
     6 : "Reset Password Token is not Generated!!!",
     7 : "Token is not provided",
     8 : "Token is not Verified",
-    9 : "Reset Password updation failed!!!"
+    9 : "Reset Password updation failed!!!",
+    10: "Password Reset Successfully Done",
+    11: "Reset Password Link Sent on mail"
 }
 
 module.exports = configureUserErrorMessageList;

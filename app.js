@@ -9,6 +9,7 @@ const passport = require('passport');
 const winston = require('winston');
 const expressWinston = require('express-winston');
 const requestLogger = require('./utilities/requsetLogger');
+const logger = require('./utilities/requsetLogger');
 
 
 app.use(cors());
@@ -37,18 +38,19 @@ var options = {
   };
 expressWinston.requestWhitelist.push('body')
 expressWinston.responseWhitelist.push('body')
-app.use(expressWinston.logger({
-    transports: [
-      new winston.transports.File(options.file)
-    ],
-    format: winston.format.combine(
+// app.use(expressWinston.logger({
+//     transports: [
+//       new winston.transports.File(options.file)
+//     ],
+//     format: winston.format.combine(
       
-      winston.format.timestamp({
-        format: 'YYYY-MM-DD HH:mm:ss'
-    }),
-    winston.format.json()
-    )
-  }));
+//       winston.format.timestamp({
+//         format: 'YYYY-MM-DD HH:mm:ss'
+//     }),
+//     winston.format.json()
+//     )
+//   }));
+logger.info('info','*** Requested for First log... ***');
 app.use('/user',userRouter);
 app.use('/product', productRouter)
 app.use(expressWinston.errorLogger({

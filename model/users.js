@@ -21,8 +21,7 @@ userDb.register = (userData) => {
             return userDb.generatePassword(userData.password).then(password => {
                 userData.password = password;
                 return model.insertMany(userData).then(data => {
-                    console.log(data);
-                    return data ? true : null;
+                    return data ? 2 : 3; // 2 and 3 are Error Codes
                 })
             });
         })
@@ -58,14 +57,13 @@ userDb.resetPassword = (userData) => {
     console.log(userData);
     return userCollection.getUserCollection().then(model => {
         return model.findOne({ "email": userData.email }).then(data => {
-            if (!data) return null;
+            if (!data) return 4;
             var resetToken = { _userId: data._id, resettoken: crypto.randomBytes(16).toString('hex') };
             return userCollection.getResetTokenCollection().then(model1 => {
                 return model1.insertMany(resetToken).then(tokenData => {
-                    if (!tokenData) return null;
+                    if (!tokenData) return 8;
                     else {
                         return model1.findOne({ _userId: data._id, resettoken: { $ne: resetToken.resettoken }}).remove().then(data => {
-                            console.log("after remove");
                             var transporter = nodemailer.createTransport({
                                 service: 'Gmail',
                                 port: 465,
@@ -84,7 +82,7 @@ userDb.resetPassword = (userData) => {
                                     'If you did not request this, please ignore this email and your password will remain unchanged.\n'
                             }
                             return transporter.sendMail(mailOptions).then((err,info) => {
-                                return true;
+                                return 10;
                             }).catch(err=>{
                                 return null;
                             })
@@ -101,7 +99,7 @@ userDb.ValidPasswordToken = (userData) => {
     if (!userData.resetToken) return 7;
     return userCollection.getResetTokenCollection().then(model => {
         return model.findOne({ resettoken: userData.resetToken }).then(data => {
-            return data ? true : null;
+            return data ? 11 : null;
         })
     })
 }
@@ -115,7 +113,7 @@ userDb.newPassword = (password) => {
                     if (!userData) return 4;
                     return userDb.generatePassword(password.newPassword).then(generatedPassword => {
                         return model1.updateOne({ _id: userToken._userId }, { password: generatedPassword }).then(newData => {
-                            return (newData.nModified == 0) ? 9 : true
+                            return (newData.nModified == 0) ? 9 : null;
                         })
                     })
                 })

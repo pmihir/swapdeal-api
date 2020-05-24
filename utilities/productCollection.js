@@ -11,11 +11,11 @@ const newProductSchema = Schema({
     discountPrice:String,
     price:String,
     image:String
-},{collection : "NewProducts", timestamp:true})
+},{collection : "NewSells", timestamp:true})
 
 productCollection.getNewProductColletion = () =>{
     return Mongoose.connect(uri, {useNewUrlParser:true}).then((database)=>{
-        return database.model('NewProducts', newProductSchema)
+        return database.model('NewSells', newProductSchema)
     }).catch((error)=>{
         let err = new Error("Could not connect to Database");
         err.status = 500;
