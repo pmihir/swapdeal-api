@@ -1,0 +1,2 @@
+Mon May 25 2020 16:02:21 GMT+0530 (India Standard Time) GET /product/get-new-product 
+[object Object]

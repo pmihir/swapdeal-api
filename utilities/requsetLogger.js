@@ -1,22 +1,15 @@
-var winston = require('winston');
+var fs = require('fs');
 
-const now = new Date();
+var requestLogger = function(req,res,next){
+  var message = {};
+  message.Date = new Date();
+  message.Method = req.method;
+  message.url = req.url;
+  var logMessage = "" + new Date() + " " + req.method + " " + req.url + " " + "\n";
+  fs.appendFile('./Logs/RequestLogger.txt', JSON.stringify(message)+"\n", function(err){
+    if (err) return next(err);
+  });
+  next();
+}
 
-var logger = winston.createLogger({
-  transports: [
-    new winston.transports.File({
-      filename: '../Logs/requestLogger.log',
-      level: 'info',
-      json: false,
-    }),
-    new winston.transports.Console()
-  ]
-});
-
-module.exports = logger;
-module.exports.stream = {
-  write: function(message, encoding) {
-    logger.info(message);
-    console.log('message=', message);
-  }
-};
+module.exports = requestLogger;
