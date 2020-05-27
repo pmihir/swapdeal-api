@@ -7,6 +7,7 @@ const productRouter = require('./routes/productRouter');
 const errorLogger = require('./utilities/errorLogger');
 const requestLogger = require('./utilities/requsetLogger');
 
+
 app.use(cors());
 app.use(bodyParser.json());
 app.use(requestLogger);

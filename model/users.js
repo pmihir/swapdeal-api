@@ -6,6 +6,7 @@ const nodemailer = require('nodemailer');
 const saltRounds = 10;
 const userCollection = require('../utilities/userConnection');
 const Mongoose = require("mongoose");
+const emoji = require('node-emoji');
 
 
 userDb.generatePassword = (password) => {
@@ -79,7 +80,7 @@ userDb.resetPassword = (userData) => {
                                 text: 'You are receiving this because you (or someone else) have requested the reset of the password for your account.\n\n' +
                                     'Please click on the following link, or paste this into your browser to complete the process:\n\n' +
                                     'http://localhost:4200/response-reset-password/' + resetToken.resettoken + '\n\n' +
-                                    'If you did not request this, please ignore this email and your password will remain unchanged.\n'
+                                    'If you did not request this, please ignore this email and your password will remain unchanged.\n' + emoji.get('smile')
                             }
                             return transporter.sendMail(mailOptions).then((err,info) => {
                                 return 10;
