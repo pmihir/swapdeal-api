@@ -100,7 +100,7 @@ userDb.ValidPasswordToken = (userData) => {
     if (!userData.resetToken) return 7;
     return userCollection.getResetTokenCollection().then(model => {
         return model.findOne({ resettoken: userData.resetToken }).then(data => {
-            return data ? 11 : null;
+            return data ? data : null;
         })
     })
 }

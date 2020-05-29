@@ -21,7 +21,7 @@ userService.register = (userData)=>{
 // final enhancement of code yet to be done
 userService.login = (userData) =>{
     return userDb.login(userData).then(data=>{
-        if(data == 4){
+        if(data){
             let err = new Error(configureUserErrorMessageList[data]);
             err.status = 500;
             throw err;
@@ -74,12 +74,12 @@ userService.validateToken = (userData) => {
     return userDb.ValidPasswordToken(userData).then(data=>{
         if(data){
             var returnData = {
-                message : configureUserErrorMessageList[data]
+                message : "Token Verified"
             }  
             return returnData;
         }
         else{
-            let err = new Error("Reset Password link could not sent to mail!!!");
+            let err = new Error(configureUserErrorMessageList[8]);
             err.status = 500;
             throw err;
         }
