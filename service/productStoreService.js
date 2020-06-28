@@ -8,4 +8,11 @@ productStoreService.getElectronicsData = () => {
     })
 }
 
+productStoreService.getAppliancesData = () => {
+    console.log("in service appliances");
+    return productStoreDb.getAppliancesCollection().then(data=>{
+        return data;
+    })
+}
+
 module.exports = productStoreService;

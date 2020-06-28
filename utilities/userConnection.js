@@ -31,7 +31,7 @@ const resettokenSchema = Schema({
 let userCollection = {};
 
 userCollection.getUserCollection = () =>{
-    return Mongoose.connect(uri, {useNewUrlParser:true}).then((database)=>{
+    return Mongoose.connect(uri, {useNewUrlParser:true,useUnifiedTopology: true}).then((database)=>{
         console.log("connected");
         return database.model('Users', userSchema)
     }).catch((error)=>{
@@ -43,7 +43,7 @@ userCollection.getUserCollection = () =>{
 }
 
 userCollection.getResetTokenCollection = () =>{
-    return Mongoose.connect(uri, {useNewUrlParser:true}).then((database)=>{
+    return Mongoose.connect(uri, {useNewUrlParser:true,useUnifiedTopology: true}).then((database)=>{
         return database.model('ResetPassword', resettokenSchema)
     }).catch((error)=>{
         let err = new Error("Could not connect to Database");
