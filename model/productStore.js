@@ -1,9 +1,18 @@
-const prodctStoreCollection = require('../utilities/productStoreCollection');
+const productStoreCollection = require('../utilities/productStoreCollection');
 const productStoreDb = {};
 
 productStoreDb.getElectronicsCollection = () => {
-    return prodctStoreCollection.getElectronicsCollection().then(model=>{
+    return productStoreCollection.getElectronicsCollection().then(model=>{
         return model.find({},{_id:0}).then(data=>{
+            return data;
+        })
+    })
+}
+
+productStoreDb.getProductById = (queryParams) => {
+    console.log('query Params', queryParams );
+    return productStoreCollection.getElectronicsCollection().then(model => {
+        return model.find({productId: queryParams.productId}, {_id:0}).then(data => {
             return data;
         })
     })
@@ -11,7 +20,7 @@ productStoreDb.getElectronicsCollection = () => {
 
 productStoreDb.getAppliancesCollection = () => {
     console.log("in model appliances collection");
-    return prodctStoreCollection.getAppliancesCollection().then(model=>{
+    return productStoreCollection.getAppliancesCollection().then(model=>{
         return model.find({},{_id:0}).then(data=>{
             return data;
         })

@@ -10,7 +10,7 @@ const newProductSchema = Schema({
     name:String,
     discountPrice:String,
     price:String,
-    image:String
+    image:String,
 },{collection : "NewSells", timestamp:true})
 
 productCollection.getNewProductColletion = () =>{
