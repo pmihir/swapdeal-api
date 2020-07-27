@@ -144,3 +144,169 @@ Thu Jun 25 2020 18:32:03 GMT+0530 (India Standard Time)-Error: Could not connect
     at processTicksAndRejections (internal/process/task_queues.js:97:5)
 Sat Jun 27 2020 19:25:39 GMT+0530 (India Standard Time)-Error: Could not connect to Database
     at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\utilities\productStoreCollection.js:41:19
+Sun Jul 05 2020 14:49:21 GMT+0530 (India Standard Time)-Error: Could not connect to Database
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\utilities\productCollection.js:20:19
+Sat Jul 11 2020 18:32:25 GMT+0530 (India Standard Time)-TypeError: productService.getProductBySearch is not a function
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\routes\productRouter.js:24:6
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:317:13)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:275:10)
+    at requestLogger (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\utilities\requsetLogger.js:12:3)
+Sat Jul 11 2020 18:32:39 GMT+0530 (India Standard Time)-TypeError: productService.getProductBySearch is not a function
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\routes\productRouter.js:24:6
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:317:13)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:275:10)
+    at requestLogger (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\utilities\requsetLogger.js:12:3)
+Sat Jul 11 2020 18:36:16 GMT+0530 (India Standard Time)-TypeError: Cannot read property 'then' of undefined
+    at Object.productService.getProductBySearch (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\service\productService.js:19:56)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\routes\productRouter.js:23:6
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:317:13)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:275:10)
+Sat Jul 11 2020 22:26:44 GMT+0530 (India Standard Time)-TypeError: model.getIndexes is not a function
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\model\productStore.js:34:18
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+Sun Jul 12 2020 17:50:39 GMT+0530 (India Standard Time)-MongoError: text index required for $text query
+    at MessageStream.messageHandler (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:261:20)
+    at MessageStream.emit (events.js:311:20)
+    at processIncomingData (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:441:12)
+    at writeOrBuffer (_stream_writable.js:425:5)
+    at MessageStream.Writable.write (_stream_writable.js:316:11)
+    at TLSSocket.ondata (_stream_readable.js:714:22)
+    at TLSSocket.emit (events.js:311:20)
+    at addChunk (_stream_readable.js:294:12)
+    at readableAddChunk (_stream_readable.js:275:11)
+    at TLSSocket.Readable.push (_stream_readable.js:209:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:186:23)
+Sun Jul 12 2020 17:57:05 GMT+0530 (India Standard Time)-MongoError: text index required for $text query
+    at MessageStream.messageHandler (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:261:20)
+    at MessageStream.emit (events.js:311:20)
+    at processIncomingData (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:441:12)
+    at writeOrBuffer (_stream_writable.js:425:5)
+    at MessageStream.Writable.write (_stream_writable.js:316:11)
+    at TLSSocket.ondata (_stream_readable.js:714:22)
+    at TLSSocket.emit (events.js:311:20)
+    at addChunk (_stream_readable.js:294:12)
+    at readableAddChunk (_stream_readable.js:275:11)
+    at TLSSocket.Readable.push (_stream_readable.js:209:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:186:23)
+Sun Jul 12 2020 18:06:20 GMT+0530 (India Standard Time)-MongoError: text index required for $text query
+    at MessageStream.messageHandler (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:261:20)
+    at MessageStream.emit (events.js:311:20)
+    at processIncomingData (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:441:12)
+    at writeOrBuffer (_stream_writable.js:425:5)
+    at MessageStream.Writable.write (_stream_writable.js:316:11)
+    at TLSSocket.ondata (_stream_readable.js:714:22)
+    at TLSSocket.emit (events.js:311:20)
+    at addChunk (_stream_readable.js:294:12)
+    at readableAddChunk (_stream_readable.js:275:11)
+    at TLSSocket.Readable.push (_stream_readable.js:209:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:186:23)
+Mon Jul 13 2020 18:52:21 GMT+0530 (India Standard Time)-ReferenceError: i is not defined
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\service\productService.js:24:40
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+Mon Jul 13 2020 19:21:41 GMT+0530 (India Standard Time)-TypeError: "("{}"".format is not a function
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\model\productStore.js:34:32
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+Mon Jul 13 2020 19:44:56 GMT+0530 (India Standard Time)-TypeError: "("{}"".format is not a function
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\model\productStore.js:35:42
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+Mon Jul 13 2020 19:45:33 GMT+0530 (India Standard Time)-TypeError: "("{}")".format is not a function
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\model\productStore.js:35:43
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+Mon Jul 13 2020 22:37:51 GMT+0530 (India Standard Time)-CastError: Cast to string failed for value "{ '$regex': /^laptop/i }" at path "$text.$search" for model "Dummy"
+    at new CastError (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\mongoose\lib\error\cast.js:29:11)
+    at model.Query.exec (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\mongoose\lib\query.js:4331:21)
+    at model.Query.Query.then (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\mongoose\lib\query.js:4423:15)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\model\productStore.js:38:71
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+Mon Jul 13 2020 22:49:30 GMT+0530 (India Standard Time)-ReferenceError: query is not defined
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\model\productStore.js:38:17
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+Mon Jul 13 2020 23:02:27 GMT+0530 (India Standard Time)-TypeError: queryString.data.split(...).toUpperCase is not a function
+    at Object.productService.getProductBySearch (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\service\productService.js:19:55)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\routes\productRouter.js:23:6
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:317:13)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:275:10)
+Fri Jul 17 2020 17:32:36 GMT+0530 (India Standard Time)-TypeError: Cannot read property 'hydrateOptions' of undefined
+    at Function.Mongoosastic.schema.statics.esSearch (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\mongoosastic\lib\mongoosastic.js:625:32)
+    at Function.search (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\mongoosastic\lib\mongoosastic.js:601:12)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\model\productStore.js:34:11
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+Fri Jul 17 2020 22:39:00 GMT+0530 (India Standard Time)-TypeError: products is not iterable
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\service\productService.js:22:25
+Fri Jul 17 2020 22:48:08 GMT+0530 (India Standard Time)-TypeError: Cannot read property 'then' of undefined
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\model\productStore.js:37:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+Fri Jul 17 2020 22:50:19 GMT+0530 (India Standard Time)-TypeError: Cannot read property 'then' of undefined
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\model\productStore.js:37:7
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+Fri Jul 17 2020 22:52:32 GMT+0530 (India Standard Time)-TypeError: products is not iterable
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\service\productService.js:22:25
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+Fri Jul 17 2020 22:55:02 GMT+0530 (India Standard Time)-TypeError: products is not iterable
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\service\productService.js:22:25
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+Fri Jul 17 2020 22:55:51 GMT+0530 (India Standard Time)-TypeError: products is not iterable
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\service\productService.js:22:25
+Fri Jul 17 2020 23:13:48 GMT+0530 (India Standard Time)-TypeError: products is not iterable
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\service\productService.js:22:25
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+Sat Jul 25 2020 17:17:31 GMT+0530 (India Standard Time)-Error: No Living connections
+    at sendReqWithConnection (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\elasticsearch\src\lib\transport.js:266:15)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\elasticsearch\src\lib\connection_pool.js:243:7)
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+Sat Jul 25 2020 23:06:26 GMT+0530 (India Standard Time)-Error: Could not connect to Database
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\utilities\productCollection.js:20:19

@@ -1,18 +1,18 @@
-const productStoreDb = require('../model/productStore');
+const productStoreDb = require("../model/productStore");
 
 productStoreService = {};
 
 productStoreService.getElectronicsData = () => {
-    return productStoreDb.getElectronicsCollection().then(data=>{
-        return data;
-    })
-}
+  return productStoreDb.getElectronicsCollection().then((data) => {
+    return data;
+  });
+};
 
 productStoreService.getAppliancesData = () => {
-    console.log("in service appliances");
-    return productStoreDb.getAppliancesCollection().then(data=>{
-        return data;
-    })
-}
+  console.log("in service appliances");
+  return productStoreDb.getAppliancesCollection().then((products) => {
+    return products;
+  });
+};
 
 module.exports = productStoreService;
