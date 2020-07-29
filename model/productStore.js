@@ -2,6 +2,7 @@ const productStoreCollection = require("../utilities/productStoreCollection");
 const productStoreDb = {};
 
 productStoreDb.getElectronicsCollection = () => {
+  console.log("in electronice collection");
   return productStoreCollection.getElectronicsCollection().then((model) => {
     return model.find({}, { _id: 0 }).then((data) => {
       return data;

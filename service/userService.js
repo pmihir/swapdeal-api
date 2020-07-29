@@ -3,13 +3,13 @@ const configureUserErrorMessageList = require("../utilities/errorMessages");
 const jwt = require('jsonwebtoken');
 const userService = {};
 
-userService.register = (userData)=>{
-    console.log("in service",userData);
-    return userDb.register(userData).then(Data=>{
-        if(Data){
-            return {"message" : configureUserErrorMessageList[Data]};
-        } 
-        else{
+userService.register = (userData) => {
+    console.log("in service", userData);
+    return userDb.register(userData).then(Data => {
+        if (Data) {
+            return { "message": configureUserErrorMessageList[Data] };
+        }
+        else {
             let err = new Error("Email already Existed!!!");
             err.status = 500;
             throw err;
@@ -19,21 +19,27 @@ userService.register = (userData)=>{
 
 
 // final enhancement of code yet to be done
-userService.login = (userData) =>{
-    return userDb.login(userData).then(data=>{
-        if(data){
+userService.login = (userData) => {
+    return userDb.login(userData).then(data => {
+
+        if (data == 4) {
             let err = new Error(configureUserErrorMessageList[data]);
             err.status = 500;
             throw err;
         }
-        else{
+        else if (data == 5) {
+            let err = new Error(configureUserErrorMessageList[data]);
+            err.status = 500;
+            throw err;
+        }
+        else {
             var token = jwt.sign({
-                data : data.username
-            },"Yoursecret");
+                data: data.username
+            }, "Yoursecret");
             var user = {
-                success:true,
-                token : 'jwt ' + token,
-                user : data
+                success: true,
+                token: 'jwt ' + token,
+                user: data
             }
             return user;
         }
@@ -41,28 +47,28 @@ userService.login = (userData) =>{
 }
 
 userService.socialLogin = (userData) => {
-    return userDb.socialLogin(userData).then(data=>{
+    return userDb.socialLogin(userData).then(data => {
         var token = jwt.sign({
-            data : data.username
-        },"Yoursecret");
+            data: data.username
+        }, "Yoursecret");
         var user = {
-            success:true,
-            token : 'jwt' + token,
-            user : data
+            success: true,
+            token: 'jwt' + token,
+            user: data
         }
         return user;
     })
 }
 
 userService.resetPassword = (userData) => {
-    return userDb.resetPassword(userData).then(data=>{
-        if(data){
+    return userDb.resetPassword(userData).then(data => {
+        if (data) {
             var successData = {
-                message : configureUserErrorMessageList[data]
+                message: configureUserErrorMessageList[data]
             }
             return successData;
         }
-        else{
+        else {
             let err = new Error("Email Authentication Failed!!!");
             err.status = 500;
             throw err;
@@ -71,14 +77,14 @@ userService.resetPassword = (userData) => {
 }
 
 userService.validateToken = (userData) => {
-    return userDb.ValidPasswordToken(userData).then(data=>{
-        if(data){
+    return userDb.ValidPasswordToken(userData).then(data => {
+        if (data) {
             var returnData = {
-                message : "Token Verified"
-            }  
+                message: "Token Verified"
+            }
             return returnData;
         }
-        else{
+        else {
             let err = new Error(configureUserErrorMessageList[8]);
             err.status = 500;
             throw err;
@@ -87,14 +93,14 @@ userService.validateToken = (userData) => {
 }
 
 userService.newPassword = (password) => {
-    return userDb.newPassword(password).then(data=>{
-        if(!data){
+    return userDb.newPassword(password).then(data => {
+        if (!data) {
             var returnData = {
-                message : "Password Reset Successfully"
-            }  
+                message: "Password Reset Successfully"
+            }
             return returnData;
         }
-        else{
+        else {
             let err = new Error(configureUserErrorMessageList[data]);
             err.status = 500;
             throw err;

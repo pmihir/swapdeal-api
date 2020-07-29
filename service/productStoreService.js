@@ -4,6 +4,7 @@ productStoreService = {};
 
 productStoreService.getElectronicsData = () => {
   return productStoreDb.getElectronicsCollection().then((data) => {
+    console.log(data);
     return data;
   });
 };

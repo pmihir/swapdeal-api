@@ -16,7 +16,7 @@ const newElectronicsProductSchema = Schema(
     image: String,
     brand: String,
   },
-  { collection: "TestProduct", timestamp: true }
+  { collection: "Electronics", timestamp: true }
 );
 
 const newAppliancesProductSchema = Schema(
@@ -59,7 +59,7 @@ prodctStoreCollection.getElectronicsCollection = () => {
     useUnifiedTopology: true,
   })
     .then((database) => {
-      return database.model("TestProduct", newElectronicsProductSchema);
+      return database.model("Electronics", newElectronicsProductSchema);
     })
     .catch((error) => {
       console.log(error);
