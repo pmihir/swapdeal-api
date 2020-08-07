@@ -1,10 +1,10 @@
 const productStoreCollection = require("../utilities/productStoreCollection");
 const productStoreDb = {};
 
-productStoreDb.getElectronicsCollection = () => {
-  console.log("in electronice collection");
-  return productStoreCollection.getElectronicsCollection().then((model) => {
-    return model.find({}, { _id: 0 }).then((data) => {
+productStoreDb.getProductCategoryData = (category) => {
+  return productStoreCollection.getProductCollection().then((model) => {
+    return model.find({ category: category.category }, { _id: 0 }).then((data) => {
+      console.log(data);
       return data;
     });
   });
@@ -12,7 +12,7 @@ productStoreDb.getElectronicsCollection = () => {
 
 productStoreDb.getProductById = (queryParams) => {
   console.log("query Params", queryParams);
-  return productStoreCollection.getElectronicsCollection().then((model) => {
+  return productStoreCollection.getproductDetailsCollection().then((model) => {
     return model
       .find({ productId: queryParams.productId }, { _id: 0 })
       .then((data) => {

@@ -2,9 +2,8 @@ const productStoreDb = require("../model/productStore");
 
 productStoreService = {};
 
-productStoreService.getElectronicsData = () => {
-  return productStoreDb.getElectronicsCollection().then((data) => {
-    console.log(data);
+productStoreService.getProductCategoryData = (category) => {
+  return productStoreDb.getProductCategoryData(category).then((data) => {
     return data;
   });
 };

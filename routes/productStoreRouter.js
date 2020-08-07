@@ -4,16 +4,16 @@ const productStoreService = require('../service/productStoreService')
 
 
 
-productStoreRouter.get('/Electronics',(req,res,next)=>{
-    return productStoreService.getElectronicsData().then(data=>{
+productStoreRouter.get('/searchCategory', (req, res, next) => {
+    return productStoreService.getProductCategoryData(req.query).then(data => {
         res.json(data);
-    }).catch(err=>next(err));
+    }).catch(err => next(err));
 });
 
-productStoreRouter.get('/Appliances',(req,res,next)=>{
-    return productStoreService.getAppliancesData().then(data=>{
-        res.json(data);
-    }).catch(err=>next(err));
-});
+// productStoreRouter.get('/Appliances',(req,res,next)=>{
+//     return productStoreService.getAppliancesData().then(data=>{
+//         res.json(data);
+//     }).catch(err=>next(err));
+// });
 
 module.exports = productStoreRouter;
