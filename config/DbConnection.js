@@ -7,23 +7,51 @@ const uri =
 Mongoose.Promise = global.Promise;
 Mongoose.set("useCreateIndex", true);
 
-var _db;
+let _db;
 
-const newConnection = {};
-
-newConnection.connectToServer = () => {
+function connect(callback) {
     Mongoose.connect(uri, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
-    }, function (err, database) {
-        _db = database;
-        console.log("in first function", _db);
-        return callback(err);
+    }, (err, db) => {
+        _db = db;
+        console.log(db);
+        callback();
     })
 }
 
-newConnection.getDb = () => {
+
+
+function get() {
     return _db;
 }
 
-module.exports = productCollection;
+function close() {
+    _db.close();
+}
+
+module.exports = {
+    connect,
+    get,
+    close
+};
+
+
+
+
+// newConnection.connectToServer = () => {
+//     Mongoose.connect(uri, {
+//         useNewUrlParser: true,
+//         useUnifiedTopology: true,
+//     }, function (err, database) {
+//         _db = database;
+//         console.log("in first function", _db);
+//         return callback(err);
+//     })
+// }
+
+// newConnection.getDb = () => {
+//     return _db;
+// }
+
+// module.exports = productCollection;

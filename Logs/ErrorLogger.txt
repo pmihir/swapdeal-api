@@ -550,3 +550,224 @@ Sun Aug 02 2020 18:48:12 GMT+0530 (India Standard Time)-TypeError: Cannot read p
     at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
     at trim_prefix (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:317:13)
     at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:284:7
+Fri Aug 07 2020 22:35:41 GMT+0530 (India Standard Time)-ReferenceError: mongodb is not defined
+    at Object.get (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\config\DbConnection.js:24:5)
+    at Object.productCollection.getNewProductColletion (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\utilities\productCollection.js:20:26)
+    at Object.productDb.getNewProduct (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\model\product.js:5:29)
+    at Object.productService.getNewProductData (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\service\productService.js:8:20)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\routes\productRouter.js:7:6
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:317:13)
+Fri Aug 07 2020 22:36:38 GMT+0530 (India Standard Time)-TypeError: newConnection.get(...).then is not a function
+    at Object.productCollection.getNewProductColletion (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\utilities\productCollection.js:20:32)
+    at Object.productDb.getNewProduct (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\model\product.js:5:29)
+    at Object.productService.getNewProductData (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\service\productService.js:8:20)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\routes\productRouter.js:7:6
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:317:13)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:284:7
+Fri Aug 07 2020 22:38:11 GMT+0530 (India Standard Time)-TypeError: productColletion.getNewProductColletion(...).then is not a function
+    at Object.productDb.getNewProduct (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\model\product.js:5:54)
+    at Object.productService.getNewProductData (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\service\productService.js:8:20)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\routes\productRouter.js:7:6
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:317:13)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:335:12)
+Fri Aug 07 2020 22:40:47 GMT+0530 (India Standard Time)-TypeError: productColletion.getNewProductCollection(...).then is not a function
+    at Object.productDb.getNewProduct (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\model\product.js:5:55)
+    at Object.productService.getNewProductData (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\service\productService.js:8:20)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\routes\productRouter.js:7:6
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:317:13)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:335:12)
+Fri Aug 07 2020 22:45:07 GMT+0530 (India Standard Time)-TypeError: Cannot read property 'then' of undefined
+    at Object.productDb.getNewProduct (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\model\product.js:7:54)
+    at Object.productService.getNewProductData (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\service\productService.js:8:20)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\routes\productRouter.js:7:6
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:317:13)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:335:12)
+Fri Aug 07 2020 22:47:04 GMT+0530 (India Standard Time)-TypeError: newConnection.get(...).then is not a function
+    at Object.productCollection.getNewProductCollection (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\utilities\productCollection.js:20:32)
+    at Object.productDb.getNewProduct (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\model\product.js:7:29)
+    at Object.productService.getNewProductData (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\service\productService.js:8:20)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\routes\productRouter.js:7:6
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:317:13)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:284:7
+Fri Aug 07 2020 22:48:57 GMT+0530 (India Standard Time)-TypeError: productColletion.getNewProductCollection(...).then is not a function
+    at Object.productDb.getNewProduct (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\model\product.js:7:55)
+    at Object.productService.getNewProductData (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\service\productService.js:8:20)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\routes\productRouter.js:7:6
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:317:13)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:335:12)
+Fri Aug 07 2020 22:55:03 GMT+0530 (India Standard Time)-ReferenceError: newProductSchema is not defined
+    at Object.get (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\config\DbConnection.js:25:35)
+    at Object.productCollection.getNewProductCollection (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\utilities\productCollection.js:23:26)
+    at Object.productDb.getNewProduct (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\model\product.js:7:29)
+    at Object.productService.getNewProductData (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\service\productService.js:8:20)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\routes\productRouter.js:7:6
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:317:13)
+Fri Aug 07 2020 22:55:51 GMT+0530 (India Standard Time)-TypeError: productColletion.getNewProductCollection(...).then is not a function
+    at Object.productDb.getNewProduct (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\model\product.js:7:55)
+    at Object.productService.getNewProductData (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\service\productService.js:8:20)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\routes\productRouter.js:7:6
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:317:13)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:335:12)
+Fri Aug 07 2020 23:00:08 GMT+0530 (India Standard Time)-TypeError: newConnection.get is not a function
+    at Object.productCollection.getNewProductCollection (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\utilities\productCollection.js:23:26)
+    at Object.productDb.getNewProduct (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\model\product.js:7:29)
+    at Object.productService.getNewProductData (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\service\productService.js:8:20)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\routes\productRouter.js:7:6
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:317:13)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:284:7
+Fri Aug 07 2020 23:06:26 GMT+0530 (India Standard Time)-TypeError: newConnection.get is not a function
+    at Object.productCollection.getNewProductCollection (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\utilities\productCollection.js:23:26)
+    at Object.productDb.getNewProduct (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\model\product.js:12:29)
+    at Object.productService.getNewProductData (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\service\productService.js:8:20)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\routes\productRouter.js:7:6
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:317:13)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:284:7
+Fri Aug 07 2020 23:15:49 GMT+0530 (India Standard Time)-TypeError: prodctStoreCollection.getProductCollection.find is not a function
+    at Object.productStoreDb.getProductCategoryData (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\model\productStore.js:6:53)
+    at Object.productStoreService.getProductCategoryData (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\service\productStoreService.js:6:25)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\routes\productStoreRouter.js:8:32
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:317:13)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:335:12)
+Fri Aug 07 2020 23:16:44 GMT+0530 (India Standard Time)-ReferenceError: newConnection is not defined
+    at Object.prodctStoreCollection.getProductCollection (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\utilities\productStoreCollection.js:61:3)
+    at Object.productStoreDb.getProductCategoryData (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\model\productStore.js:6:32)
+    at Object.productStoreService.getProductCategoryData (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\service\productStoreService.js:6:25)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\routes\productStoreRouter.js:8:32
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:317:13)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:284:7
