@@ -61,36 +61,22 @@ const productDetailSchema = Schema(
 
 prodctStoreCollection.getProductCollection = () => {
   return newConnection.get().model("Products", newProductSchema);
-  // return Mongoose.connect(uri, {
-  //   useNewUrlParser: true,
-  //   useUnifiedTopology: true,
-  // })
-  //   .then((database) => {
-  //     return database.model("Products", newProductSchema);
-  //   })
-  //   .catch((error) => {
-  //     console.log(error);
-  //     let err = new Error("Could not connect to Database");
-  //     err.status = 500;
-  //     throw err;
-  //   });
+};
+
+const productSchema = Schema({
+  category: String,
+  name: String,
+  discountPrice: String,
+  price: String,
+  image: String,
+}, { collection: "NewSells", timestamp: true })
+
+prodctStoreCollection.getNewProductCollection = () => {
+  return newConnection.get().model("NewSells", productSchema);
 };
 
 prodctStoreCollection.getproductDetailsCollection = () => {
   return newConnection.get().model("TestProduct", productDetailSchema);
-  // return Mongoose.connect(uri, {
-  //   useNewUrlParser: true,
-  //   useUnifiedTopology: true,
-  // })
-  //   .then((database) => {
-  //     return database.model("TestProduct", productDetailSchema);
-  //   })
-  //   .catch((error) => {
-  //     console.log(error);
-  //     let err = new Error("Could not connect to Database");
-  //     err.status = 500;
-  //     throw err;
-  //   });
 };
 
 module.exports = prodctStoreCollection;

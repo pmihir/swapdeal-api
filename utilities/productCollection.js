@@ -16,7 +16,7 @@ const newProductSchema = Schema({
 }, { collection: "NewSells", timestamp: true })
 
 productCollection.getNewProductCollection = () => {
-    return newConnection.get().model("NewSelles", newProductSchema);
+    return newConnection.get().model("NewSells", newProductSchema);
 }
 
 module.exports = productCollection;

@@ -1,4 +1,4 @@
-const productColletion = require('../utilities/productCollection');
+const productColletion = require('../utilities/productStoreCollection');
 const dbConnection = require("../config/DbConnection");
 const productDb = {};
 

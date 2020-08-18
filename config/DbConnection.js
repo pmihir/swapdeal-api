@@ -15,7 +15,6 @@ function connect(callback) {
         useUnifiedTopology: true,
     }, (err, db) => {
         _db = db;
-        console.log(db);
         callback();
     })
 }
@@ -23,6 +22,7 @@ function connect(callback) {
 
 
 function get() {
+    console.log("in db");
     return _db;
 }
 
