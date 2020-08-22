@@ -60,7 +60,7 @@ cartDb.getCartData = (data) => {
   })
 }
 
-cartDb.changeQty = (data) => {
+cartDb.removeProduct = (data) => {
   console.log(data.userId);
   return userCollection.getUserCollection().updateOne({ _id: data.userId }, { $pull: { 'cart': { 'pId': data.productId } } }).then((updatedCart) => {
     if (updatedCart.nModified == 1) {
@@ -72,7 +72,7 @@ cartDb.changeQty = (data) => {
   })
 }
 
-cartDb.removeProduct = (data) => {
+cartDb.changeQty = (data) => {
   console.log(data.userId);
   return userCollection.getUserCollection().updateOne({ _id: data.userId, cart: { $elemMatch: { pId: data.productId } } },
     { $set: { 'cart.$.qty': data.quantity } }).then((updatedCart) => {

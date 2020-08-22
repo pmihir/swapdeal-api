@@ -30,7 +30,7 @@ cartService.changeQty = (updatedQuantity) => {
 }
 
 cartService.removeProduct = (productData) => {
-  return cartDb.changeQty(productData).then((data) => {
+  return cartDb.removeProduct(productData).then((data) => {
     return data;
   });
 }

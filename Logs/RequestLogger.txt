@@ -1249,3 +1249,11 @@
 {"Date":"2020-08-22T17:33:46.207Z","Method":"POST","url":"/cartRouter/addToCart"}
 {"Date":"2020-08-22T17:33:53.477Z","Method":"POST","url":"/cartRouter/removeProduct"}
 {"Date":"2020-08-22T17:34:01.651Z","Method":"POST","url":"/cartRouter/removeProduct"}
+{"Date":"2020-08-22T17:41:24.090Z","Method":"GET","url":"/productStore/searchCategory?category=Electronics"}
+{"Date":"2020-08-22T17:41:59.607Z","Method":"POST","url":"/cartRouter/addToCart"}
+{"Date":"2020-08-22T17:42:12.958Z","Method":"POST","url":"/cartRouter/changeQty"}
+{"Date":"2020-08-22T17:44:47.571Z","Method":"GET","url":"/productStore/searchCategory?category=Electronics"}
+{"Date":"2020-08-22T17:44:55.014Z","Method":"POST","url":"/cartRouter/addToCart"}
+{"Date":"2020-08-22T17:45:01.683Z","Method":"POST","url":"/cartRouter/addToCart"}
+{"Date":"2020-08-22T17:45:23.387Z","Method":"POST","url":"/cartRouter/changeQty"}
+{"Date":"2020-08-22T17:45:33.066Z","Method":"POST","url":"/cartRouter/removeProduct"}
