@@ -25,9 +25,11 @@ cartDb.addToCart = (cartData) => {
           .then((updatedCart) => {
             if (updatedCart.nModified == 1) {
               console.log(userData);
-              return 12;
+              return userCollection.getUserCollection().find({ _id: userId }).then((data) => {
+                return data[0];
+              })
             } else {
-              return 13;
+              return null;
             }
           });
       } else {
@@ -39,19 +41,48 @@ cartDb.addToCart = (cartData) => {
           .then((results) => {
             console.log(userData);
             if (results.nModified == 1) {
-              return 12;
+              return userCollection.getUserCollection().find({ _id: userId }).then((data) => {
+                return data[0];
+              })
             } else {
-              return 13;
+              return null;
             }
           });
       }
     });
 };
 
-cartDb.getCartData = (userId) => {
-  return userCollection.getUserCollection().find({ _id: userId }).then((cartArray) => {
-    return cartArray.cart;
+cartDb.getCartData = (data) => {
+  console.log(data.userId);
+  return userCollection.getUserCollection().find({ _id: data.userId }).then((cartArray) => {
+    console.log(cartArray);
+    return cartArray[0].cart;
   })
+}
+
+cartDb.changeQty = (data) => {
+  console.log(data.userId);
+  return userCollection.getUserCollection().updateOne({ _id: data.userId }, { $pull: { 'cart': { 'pId': data.productId } } }).then((updatedCart) => {
+    if (updatedCart.nModified == 1) {
+      return userCollection.getUserCollection().find({ _id: data.userId }).then((data) => {
+        return data[0];
+      })
+    }
+    return null;
+  })
+}
+
+cartDb.removeProduct = (data) => {
+  console.log(data.userId);
+  return userCollection.getUserCollection().updateOne({ _id: data.userId, cart: { $elemMatch: { pId: data.productId } } },
+    { $set: { 'cart.$.qty': data.quantity } }).then((updatedCart) => {
+      if (updatedCart.nModified == 1) {
+        return userCollection.getUserCollection().find({ _id: data.userId }).then((data) => {
+          return data[0];
+        })
+      }
+      return null;
+    })
 }
 
 module.exports = cartDb;

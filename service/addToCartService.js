@@ -7,10 +7,10 @@ cartService = {};
 cartService.addToCart = (cartData) => {
   return cartDb.addToCart(cartData).then((data) => {
     console.log(data);
-    if (data == 12) {
-      return { message: configureUserErrorMessageList[data] };
+    if (data) {
+      return data;
     } else {
-      let err = new Error(configureUserErrorMessageList[data]);
+      let err = new Error("Error while adding item to cart");
       err.status = 500;
       throw err;
     }
@@ -19,6 +19,18 @@ cartService.addToCart = (cartData) => {
 
 cartService.getCartData = (userId) => {
   return cartDb.getCartData(userId).then((data) => {
+    return data;
+  });
+}
+
+cartService.changeQty = (updatedQuantity) => {
+  return cartDb.changeQty(updatedQuantity).then((data) => {
+    return data;
+  });
+}
+
+cartService.removeProduct = (productData) => {
+  return cartDb.changeQty(productData).then((data) => {
     return data;
   });
 }

@@ -1349,3 +1349,122 @@ Sun Aug 16 2020 17:51:17 GMT+0530 (India Standard Time)-ReferenceError: prodObj 
 Sun Aug 16 2020 17:53:28 GMT+0530 (India Standard Time)-ReferenceError: prodObj is not defined
     at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\model\cart.js:38:56
     at processTicksAndRejections (internal/process/task_queues.js:97:5)
+Tue Aug 18 2020 17:32:21 GMT+0530 (India Standard Time)-CastError: Cast to ObjectId failed for value "{ userId: '5f38197e484bea26d0bccd2e' }" at path "_id" for model "Users"
+    at new CastError (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\mongoose\lib\error\cast.js:29:11)
+    at model.Query.exec (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\mongoose\lib\query.js:4331:21)
+    at model.Query.Query.then (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\mongoose\lib\query.js:4423:15)
+    at Object.cartDb.getCartData (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\model\cart.js:52:65)
+    at Object.cartService.getCartData (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\service\addToCartService.js:21:17)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\routes\cartRouter.js:16:6
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+Tue Aug 18 2020 17:33:55 GMT+0530 (India Standard Time)-CastError: Cast to ObjectId failed for value "{ userId: '5f38197e484bea26d0bccd2e' }" at path "_id" for model "Users"
+    at new CastError (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\mongoose\lib\error\cast.js:29:11)
+    at model.Query.exec (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\mongoose\lib\query.js:4331:21)
+    at model.Query.Query.then (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\mongoose\lib\query.js:4423:15)
+    at Object.cartDb.getCartData (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\model\cart.js:53:65)
+    at Object.cartService.getCartData (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\service\addToCartService.js:21:17)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\routes\cartRouter.js:16:6
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+Tue Aug 18 2020 17:45:29 GMT+0530 (India Standard Time)-CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Users"
+    at new CastError (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\mongoose\lib\error\cast.js:29:11)
+    at model.Query.exec (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\mongoose\lib\query.js:4331:21)
+    at model.Query.Query.then (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\mongoose\lib\query.js:4423:15)
+    at Object.cartDb.getCartData (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\model\cart.js:53:72)
+    at Object.cartService.getCartData (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\service\addToCartService.js:21:17)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\routes\cartRouter.js:16:6
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+Tue Aug 18 2020 17:46:19 GMT+0530 (India Standard Time)-CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Users"
+    at new CastError (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\mongoose\lib\error\cast.js:29:11)
+    at model.Query.exec (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\mongoose\lib\query.js:4331:21)
+    at model.Query.Query.then (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\mongoose\lib\query.js:4423:15)
+    at Object.cartDb.getCartData (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\model\cart.js:53:72)
+    at Object.cartService.getCartData (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\service\addToCartService.js:21:17)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\routes\cartRouter.js:16:6
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+Tue Aug 18 2020 18:00:21 GMT+0530 (India Standard Time)-CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Users"
+    at new CastError (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\mongoose\lib\error\cast.js:29:11)
+    at model.Query.exec (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\mongoose\lib\query.js:4331:21)
+    at model.Query.Query.then (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\mongoose\lib\query.js:4423:15)
+    at Object.cartDb.getCartData (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\model\cart.js:53:72)
+    at Object.cartService.getCartData (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\service\addToCartService.js:21:17)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\routes\cartRouter.js:16:6
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+Tue Aug 18 2020 18:03:11 GMT+0530 (India Standard Time)-CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Users"
+    at new CastError (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\mongoose\lib\error\cast.js:29:11)
+    at model.Query.exec (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\mongoose\lib\query.js:4331:21)
+    at model.Query.Query.then (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\mongoose\lib\query.js:4423:15)
+    at Object.cartDb.getCartData (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\model\cart.js:53:72)
+    at Object.cartService.getCartData (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\service\addToCartService.js:21:17)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\routes\cartRouter.js:16:6
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+Tue Aug 18 2020 18:12:49 GMT+0530 (India Standard Time)-CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Users"
+    at new CastError (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\mongoose\lib\error\cast.js:29:11)
+    at model.Query.exec (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\mongoose\lib\query.js:4331:21)
+    at model.Query.Query.then (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\mongoose\lib\query.js:4423:15)
+    at Object.cartDb.getCartData (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\model\cart.js:53:72)
+    at Object.cartService.getCartData (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\service\addToCartService.js:21:17)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\routes\cartRouter.js:16:6
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Angular\Swap Deal\SwapdealAPI\swapdeal-api\node_modules\express\lib\router\layer.js:95:5)
